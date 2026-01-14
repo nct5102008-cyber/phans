@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fanpage Idol</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at center, #5f7cff 0%, #1a2a6c 35%, #050514 70%);
+      color: #eef1ff;
+    }
+
+    header {
+      background: radial-gradient(circle at center, rgba(120,150,255,0.85) 0%, rgba(20,30,80,0.9) 45%, #050514 75%);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 2px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    header p {
+      margin-top: 12px;
+      opacity: 0.85;
+      font-size: 15px;
+    }
+
+    nav {
+      background: rgba(5,5,20,0.9);
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid rgba(120,150,255,0.35);
+    }
+
+    nav a {
+      color: #9fb2ff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover { color: #ffffff; }
+
+    section {
+      padding: 70px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #9fb2ff;
+      margin-bottom: 24px;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .profile {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 230px;
+      border-radius: 18px;
+      box-shadow: 0 0 35px rgba(120,150,255,0.45);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      filter: grayscale(20%);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.03);
+    }
+
+    footer {
+      background: rgba(5,5,20,0.95);
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      opacity: 0.75;
+      border-top: 1px solid rgba(120,150,255,0.35);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>✨ Mãi fan Wren Evans ✨</h1>
+  <p>Nơi lưu giữ âm nhạc, cá tính và hành trình của Wren Evans</p>
+</header>
+
+<nav>
+  <a href="#about">Giới thiệu</a>
+  <a href="#gallery">Thư viện</a>
+  <a href="#works">Hoạt động</a>
+  <a href="#message">Lời nhắn</a>
+</nav>
+
+<section id="about">
+  <h2>🌟 Giới thiệu</h2>
+  <div class="profile">
+    <img src="idol.jpg" alt="idol" />
+    <div>
+      <p><b>Tên thật:</b> Lê Phan </p>
+      <p><b>Sinh nhật:</b> 19 tháng 11, 2001 </p>
+      <p><b>Nghề nghiệp:</b> Ca nhạc sĩ </p>
+      <p><b>Điều khiến fan yêu thích:</b> </p>
+    </div>
+  </div>
+</section>
+<section id="gallery">
+  <h2>📸 Thư viện</h2>
+  <div class="gallery">
+    <img src="img1.jpg" />
+    <img src="img2.jpg" />
+    <img src="img3.jpg" />
+  </div>
+</section>
+<section id="works">
+  <h2>🎤 Hoạt động nổi bật</h2>
+  <div class="gallery">
+    <div>
+      <img src="work1.jpg" alt="work 1" />
+      <img src="work2.jpg" alt="work 2" />
+      <p>Album</p>
+      <img src="work5.jpg" alt="work 5" />
+      <img src="work6.jpg" alt="work 6" />
+      <p>Live stage</p>
+    </div>
+<style>
+.album img {
+  transition: box-shadow 0.3s, transform 0.3s;
+  border-radius: 16px;
+}
+
+/* CHỈ ẢNH ĐƯỢC GLOW */
+.album.playing img {
+  box-shadow:
+    0 0 25px rgba(0,180,255,0.9),
+    0 0 60px rgba(0,120,255,0.7);
+  animation: pulseGlow 1.6s infinite;
+  transform: scale(1.02);
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow:
+      0 0 20px rgba(0,120,255,0.6),
+      0 0 40px rgba(0,120,255,0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 35px rgba(0,200,255,1),
+      0 0 70px rgba(0,150,255,0.9);
+  }
+  100% {
+    box-shadow:
+      0 0 20px rgba(0,120,255,0.6),
+      0 0 40px rgba(0,120,255,0.4);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow:
+      0 0 20px rgba(0,120,255,0.6),
+      0 0 40px rgba(0,120,255,0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 35px rgba(0,200,255,1),
+      0 0 70px rgba(0,150,255,0.9);
+  }
+  100% {
+    box-shadow:
+      0 0 20px rgba(0,120,255,0.6),
+      0 0 40px rgba(0,120,255,0.4);
+  }
+}
+</style>
+
+<section class="section">
+  <h2>🎧 Bài hát nổi bật</h2>
+
+  <div class="album-grid">
+
+    <div class="album" onclick="playFromImage(this)">
+      <img src="work4.jpg" alt="Song cover">
+      <div class="album-info">
+        <h3>Từng quen</h3>
+        <audio preload="none" onclick="event.stopPropagation()">
+          <source src="audio/thichem_preview.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="album" onclick="playFromImage(this)">
+      <img src="imagessong1.jpg" alt="Song cover">
+      <div class="album-info">
+        <h3>Tò te tí</h3>
+        <audio preload="none" onclick="event.stopPropagation()">
+          <source src="audio/thichem_preview.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="album" onclick="playFromImage(this)">
+      <img src="imagessong2.jpg" alt="Song cover">
+      <div class="album-info">
+        <h3>Thu đợi</h3>
+        <audio preload="none" onclick="event.stopPropagation()">
+          <source src="audio/gapmay_preview.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="album" onclick="playFromImage(this)">
+      <img src="imagessong3.jpg" alt="Song cover">
+      <div class="album-info">
+        <h3>Gió đưa tình</h3>
+        <audio preload="none" onclick="event.stopPropagation()">
+          <source src="audio/callme_preview.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script>
+const audios = document.querySelectorAll('audio');
+
+audios.forEach(audio => {
+  audio.addEventListener('play', () => {
+    audios.forEach(other => {
+      if (other !== audio) {
+        other.pause();
+        other.closest('.album').classList.remove('playing');
+      }
+    });
+    audio.closest('.album').classList.add('playing');
+  });
+
+  audio.addEventListener('pause', () => {
+    audio.closest('.album').classList.remove('playing');
+  });
+});
+
+function playFromImage(album) {
+  const audio = album.querySelector('audio');
+  if (!audio) return;
+
+  audios.forEach(a => {
+    if (a !== audio) {
+      a.pause();
+      a.closest('.album').classList.remove('playing');
+    }
+  });
+
+  if (audio.paused) {
+    audio.currentTime = 0;
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+</script>
+  </div>
+</section>
+<section id="message">
+  <h2>💌 Lời nhắn của fan</h2>
+  <p>
+    Cảm ơn vì đã luôn cố gắng và tỏa sáng theo cách của riêng mình.
+    Fan sẽ luôn ở đây, cổ vũ và yêu thương.
+  </p>
+</section>
+
+<footer>
+  Fan-made website | Made with 💖 by a fan
+</footer>
+
+</body>
+</html>
